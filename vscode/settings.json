@@ -1,0 +1,16 @@
+{
+  // 每次儲存就格式化
+  "editor.formatOnSave": true,
+  // 儲存時同時執行所有可行動作（包含 fix ESLint）
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": true
+  },
+  // 啟用 ESLint/Prettier 外掛
+  "eslint.validate": [
+    "javascript", "javascriptreact",
+    "typescript", "typescriptreact"
+  ],
+  // 只對有 .prettierrc 的專案生效
+  "prettier.requireConfig": true
+}
