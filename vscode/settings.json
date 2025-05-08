@@ -1,16 +1,27 @@
 {
-  // 每次儲存就格式化
+  // 儲存時自動格式化
   "editor.formatOnSave": true,
-  // 儲存時同時執行所有可行動作（包含 fix ESLint）
+
+  // 儲存時啟用自動修復（由 ESLint 提供）
   "editor.codeActionsOnSave": {
     "source.fixAll": true,
     "source.fixAll.eslint": true
   },
-  // 啟用 ESLint/Prettier 外掛
-  "eslint.validate": [
-    "javascript", "javascriptreact",
-    "typescript", "typescriptreact"
-  ],
-  // 只對有 .prettierrc 的專案生效
-  "prettier.requireConfig": true
+
+  // 指定格式化工具（選擇 Prettier）
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // 要格式化的語言（可擴充）
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
