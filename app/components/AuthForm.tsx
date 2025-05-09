@@ -57,7 +57,7 @@ const AuthForm = ({ type }: { type:FormType }) => {
       <div className="flex flex-col gap-6 card py-14 px-10">
         <div className="flex flex-row gap-2 justify-center">
           <Image src="/logo.svg" alt="logo" height={32} width={38} />
-          <h2 className="text-primary-100">面面相去</h2>
+          <h2 className="text-primary-100">面面相趣</h2>
         </div>
         <h3 className="m-auto tracking-wide">模擬面試不求人，AI面試在線等</h3>
 
